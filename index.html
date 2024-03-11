@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v6.0.0/dist/aframe-extras.min.js"></script>
+  <script src="https://unpkg.com/aframe-environment-component@1.3.3/dist/aframe-environment-component.min.js"></script>
+  <title>My WebVR House</title>
+</head>
+
+<body>
+  <a-scene inspector="" keyboard-shortcuts="" screenshot="" xr-mode-ui="" device-orientation-permission-ui="" cursor="rayOrigin: mouse">
+    <!-- Camera -->
+    <a-entity camera="" position="1 15 1" wasd-controls="acceleration: 200" rotation="-57.341405677543044 -832.6222678841117 0" look-controls="pointerLockEnabled: true" aframe-injected="" data-aframe-inspector-original-camera=""></a-entity>
+    <!-- Sky -->
+    <a-plane position="-2.46639 0.475 -139.30238" rotation="-90 0 0" width="600" height="600" color="#F2C18D" material="" geometry="width: 200; height: 200"></a-plane>
+    <!--Sàn nhà-->
+    <a-entity static-body="" geometry="depth: 80; width: 120; height: 5" position="-28.477 3.125 -183.9866" material="shader: flat; side: double; src: Assets/Src/Images/bedroom.jpg; repeat: 300 300" rotation=""></a-entity>
+    <a-entity static-body="" geometry="depth: 120; width: 50; height: 5" position="55.756 3.348 -163.88243" material="shader: flat; side: double; src: Assets/Src/Images/bedroom.jpg; repeat: 300 300" rotation=""></a-entity>
+    
+    <!--Bậc-->
+    <a-box position="20.81 1.21369 -124.044" rotation="-0.0641712730546522 90.00708595269128 -0.2417881895452074" color="#249ab7" material="color: #A94438" geometry="depth: 20; width: 40"></a-box>
+    <a-box position="21.69236 2.23672 -125.00741" rotation="-0.0641712730546522 90.00708595269128 -0.2417881895452074" color="#249ab7" material="color: #A94438" geometry="depth: 18; width: 38"></a-box>
+    <a-box position="22.75849 3.28154 -125.93621" rotation="-0.064 90.007 -0.242" color="#249ab7" material="color: #A94438" geometry="depth: 16; width: 36"></a-box>
+    <a-box position="23.69006 4.21765 -126.9639" rotation="-0.064 90.007 -0.242" color="#249ab7" material="color: #A94438" geometry="depth: 14; width: 34"></a-box>
+    <a-box position="24.64191 5.26407 -128.01403" rotation="-0.064 90.007 -0.242" color="#249ab7" material="color: #A94438" geometry="depth: 12; width: 32"></a-box>
+   
+    <!--Tường nhà-->
+    <a-box position="-86.66266 20.66369 -183.80398" rotation="0 -179.81 0" color="#7A8B8B" material="" geometry="depth: 80; height: 30"></a-box>
+    <a-box position="-3.263 20.514 -222.71772" rotation="0 90 0" color="#249ab7" material="color: #7A8B8B" geometry="depth: 168; height: 30; width: 2"></a-box>
+    <a-box position="80.36445 20.664 -163.41581" rotation="0 -179.81 0" color="#7A8B8B" material="" geometry="depth: 120; height: 30"></a-box>
+    <a-box position="9.49854 20.66369 -169.51253" rotation="0 -179.81 0" color="#7A8B8B" material="" geometry="depth: 40; height: 30"></a-box>
+    <a-box position="54.58981 20.83247 -188.45532" rotation="0 90.21793442129943 0" color="#7A8B8B" material="" geometry="depth: 50; height: 30"></a-box>
+    <a-box position="29.051 20.664 -196.52215" rotation="0 -179.81 0" color="#7A8B8B" material="" geometry="depth: 20; height: 30"></a-box>
+    <a-box position="29.05128 20.66369 -219.16608" rotation="0 -179.81 0" color="#7A8B8B" material="" geometry="depth: 5; height: 30"></a-box>
+    <a-box position="20.25823 20.832 -149.01178" rotation="0 90.218 0" color="#7A8B8B" material="" geometry="depth: 20; height: 30"></a-box>
+    <a-box position="-36.75628 20.70855 -169.51253" rotation="0 -179.81 0" color="#7A8B8B" material="" geometry="depth: 40; height: 30"></a-box>
+    <a-box position="-35.8536 20.81718 -190.16137" rotation="0 90.218 0" color="#7A8B8B" material="" geometry="depth: 60; height: 30"></a-box>
+    <a-box position="54.90843 20.832 -105.30099" rotation="0 90.218 0" color="#7A8B8B" material="" geometry="depth: 50; height: 30"></a-box>
+    <!--Tường dào-->
+    <a-box position="76.494 7.094 -237.93438" rotation="0 90 0" color="#1B4242" material="" geometry="depth: 38; height: 13; width: 0.1"></a-box>
+    <a-box position="36.32513 7.094 -237.934" rotation="0 90 0" color="#1B4242" material="" geometry="depth: 38; height: 13; width: 0.1"></a-box>
+    <a-box position="-3.83561 7.094 -237.934" rotation="0 90 0" color="#1B4242" material="" geometry="depth: 38; height: 13; width: 0.1"></a-box>
+    <a-box position="-43.98002 7.094 -237.934" rotation="0 90 0" color="#1B4242" material="" geometry="depth: 38; height: 13; width: 0.1"></a-box>
+    <a-box position="-82.83553 7.094 -237.934" rotation="0 90 0" color="#1B4242" material="" geometry="depth: 35; height: 13; width: 0.1"></a-box>
+    <a-box position="96.557 7.156 -217.90484" rotation="0 -179.81 0" color="#1B4242" material="" geometry="depth: 38; height: 13; width: 0.1"></a-box>
+    <a-box position="96.557 7.156 -177.65082" rotation="0 -179.81 0" color="#1B4242" material="" geometry="depth: 38; height: 13; width: 0.1"></a-box>
+    <a-box position="96.557 7.156 -137.40699" rotation="0 -179.81 0" color="#1B4242" material="" geometry="depth: 38; height: 13; width: 0.1"></a-box>
+    <a-box position="96.557 7.156 -97.15665" rotation="0 -179.81 0" color="#1B4242" material="" geometry="depth: 38; height: 13; width: 0.1"></a-box>
+    <a-box position="96.557 7.156 -58.74335" rotation="0 -179.81 0" color="#1B4242" material="" geometry="depth: 34.5; height: 13; width: 0.1"></a-box>
+    <a-box position="-101.45966 7.156 -58.743" rotation="0 -179.81 0" color="#1B4242" material="" geometry="depth: 34.5; height: 13; width: 0.1"></a-box>
+    <a-box position="-101.45966 7.156 -95.40592" rotation="0 -179.81 0" color="#1B4242" material="" geometry="depth: 34.5; height: 13; width: 0.1"></a-box>
+    <a-box position="-101.46 7.156 -132.03549" rotation="0 -179.81 0" color="#1B4242" material="" geometry="depth: 34.5; height: 13; width: 0.1"></a-box>
+    <a-box position="-101.46 7.156 -168.7413" rotation="0 -179.81 0" color="#1B4242" material="" geometry="depth: 34.5; height: 13; width: 0.1"></a-box>
+    <a-box position="-101.46 7.156 -205.53747" rotation="0 -179.81 0" color="#1B4242" material="" geometry="depth: 34.5; height: 13; width: 0.1"></a-box>
+    <a-box position="76.33991 7.094 -40.2909" rotation="0 90 0" color="#1B4242" material="" geometry="depth: 38; height: 13; width: 0.1"></a-box>
+    <a-box position="36.06039 7.094 -40.291" rotation="0 90 0" color="#1B4242" material="" geometry="depth: 38; height: 13; width: 0.1"></a-box>
+    <a-box position="-81.44644 7.094 -40.291" rotation="0 90 0" color="#1B4242" material="" geometry="depth: 38; height: 13; width: 0.1"></a-box>
+    <a-box position="-4.05652 7.094 -40.291" rotation="0 90 0" color="#1B4242" material="" geometry="depth: 38; height: 13; width: 0.1"></a-box>
+    <!--Cột dào-->
+    <a-box position="96.54116 8.01665 -238.25321" rotation="0 90 0" color="#249ab7" material="color: #FFC47E" geometry="depth: 2; height: 15; width: 2"></a-box>
+    <a-box position="-101.49068 8.01665 -238.25321" rotation="0 90 0" color="#249ab7" material="color: #FFC47E" geometry="depth: 2; height: 15; width: 2"></a-box>
+    <a-box position="-101.491 8.017 -40.35242" rotation="0 90 0" color="#249ab7" material="color: #FFC47E" geometry="depth: 2; height: 15; width: 2"></a-box>
+    <a-box position="96.39274 8.017 -40.352" rotation="0 90 0" color="#249ab7" material="color: #FFC47E" geometry="depth: 2; height: 15; width: 2"></a-box>
+    <a-box position="56.41881 8.01665 -238.25321" rotation="0 90 0" color="#249ab7" material="color: #FFC47E" geometry="depth: 2; height: 15; width: 2"></a-box>
+    <a-box position="16.26546 8.01665 -238.25321" rotation="0 90 0" color="#249ab7" material="color: #FFC47E" geometry="depth: 2; height: 15; width: 2"></a-box>
+    <a-box position="-23.92684 8.017 -238.253" rotation="0 90 0" color="#249ab7" material="color: #FFC47E" geometry="depth: 2; height: 15; width: 2"></a-box>
+    <a-box position="-64.05836 8.017 -238.253" rotation="0 90 0" color="#249ab7" material="color: #FFC47E" geometry="depth: 2; height: 15; width: 2"></a-box>
+    <a-box position="96.541 8.017 -197.76377" rotation="0 90 0" color="#249ab7" material="color: #FFC47E" geometry="depth: 2; height: 15; width: 2"></a-box>
+    <a-box position="96.541 8.017 -157.5426" rotation="0 90 0" color="#249ab7" material="color: #FFC47E" geometry="depth: 2; height: 15; width: 2"></a-box>
+    <a-box position="96.541 8.017 -117.26406" rotation="0 90 0" color="#249ab7" material="color: #FFC47E" geometry="depth: 2; height: 15; width: 2"></a-box>
+    <a-box position="96.541 8.017 -77.04676" rotation="0 90 0" color="#249ab7" material="color: #FFC47E" geometry="depth: 2; height: 15; width: 2"></a-box>
+    <a-box position="-101.491 8.017 -77.073" rotation="0 90 0" color="#249ab7" material="color: #FFC47E" geometry="depth: 2; height: 15; width: 2"></a-box>
+    <a-box position="-101.491 8.017 -113.72901" rotation="0 90 0" color="#249ab7" material="color: #FFC47E" geometry="depth: 2; height: 15; width: 2"></a-box>
+    <a-box position="-101.491 8.017 -150.39974" rotation="0 90 0" color="#249ab7" material="color: #FFC47E" geometry="depth: 2; height: 15; width: 2"></a-box>
+    <a-box position="-101.491 8.017 -187.15672" rotation="0 90 0" color="#249ab7" material="color: #FFC47E" geometry="depth: 2; height: 15; width: 2"></a-box>
+    <a-box position="-101.491 8.017 -223.8531" rotation="0 90 0" color="#249ab7" material="color: #FFC47E" geometry="depth: 2; height: 15; width: 2"></a-box>
+    <a-box position="56.2121 8.017 -40.352" rotation="0 90 0" color="#249ab7" material="color: #FFC47E" geometry="depth: 2; height: 15; width: 2"></a-box>
+    <a-box position="15.99055 8.017 -40.352" rotation="0 90 0" color="#249ab7" material="color: #FFC47E" geometry="depth: 2; height: 15; width: 2"></a-box>
+    <!--Cột cổng-->
+    <a-box position="-24.77882 10.48266 -40.352" rotation="0 90 0" color="#249ab7" material="color: #FF9843" geometry="depth: 3; height: 20; width: 3"></a-box>
+    <a-box position="-60.84979 10.483 -40.352" rotation="0 90 0" color="#249ab7" material="color: #FF9843" geometry="depth: 3; height: 20; width: 3"></a-box>
+    <a-box position="-42.68554 19.581 -40.299" rotation="0 90 0" color="#249ab7" material="color: #FF9843" geometry="depth: 45; height: 2; width: 10"></a-box>
+    <!--Lan can bờ dào-->
+    <a-box position="37.27012 15.64456 -40.352" rotation="0 90 0" color="#249ab7" material="color: #FFC47E" geometry="depth: 120; width: 2"></a-box>
+    <a-box position="-2.41229 15.64456 -238.04107" rotation="0 90 0" color="#249ab7" material="color: #FFC47E" geometry="depth: 200; width: 2"></a-box>
+    <a-box position="96.63238 15.645 -139.54195" rotation="0 -0.06130648407899809 0" color="#249ab7" material="color: #FFC47E" geometry="depth: 196; width: 2"></a-box>
+    <a-box position="-101.64359 15.645 -132.29343" rotation="0 -0.06130648407899809 0" color="#249ab7" material="color: #FFC47E" geometry="depth: 185; width: 2"></a-box>
+    <a-box position="-82.67592 15.64456 -40.352" rotation="0 90 0" color="#249ab7" material="color: #FFC47E" geometry="depth: 40; width: 2"></a-box>
+    <!--Kính-->
+    <a-box position="-37.86816 20.744 -149.045" width="4" height="2" depth="0.1" material="transparent: true; opacity: 0.5; color: black" geometry="width: 96; height: 30; depth: 1"></a-box>
+    <!--Cột kính-->
+    <a-box position="-69.76476 20.66369 -147.00705" rotation="0 -179.81 0" color="#7A8B8B" material="" geometry="depth: 3; height: 30"></a-box>
+    <a-box position="-53.10237 20.66369 -147.00705" rotation="0 -179.81 0" color="#7A8B8B" material="" geometry="depth: 3; height: 30"></a-box>
+    <a-box position="-36.69844 20.664 -147.007" rotation="0 -179.81 0" color="#7A8B8B" material="" geometry="depth: 3; height: 30"></a-box>
+    <a-box position="-20.78121 20.664 -147.05978" rotation="0 -179.81 0" color="#7A8B8B" material="" geometry="depth: 3; height: 30"></a-box>
+    <a-box position="-5.00562 20.664 -147.06" rotation="0 -179.81 0" color="#7A8B8B" material="" geometry="depth: 3; height: 30"></a-box>
+    <a-box position="9.5715 20.664 -147.06" rotation="0 -179.81 0" color="#7A8B8B" material="" geometry="depth: 3; height: 30"></a-box>
+    <!--tran nha-->
+    <a-entity static-body="" geometry="depth: 80; width: 120; height: 5" position="-28.477 37.44789 -183.987" material="shader: flat; side: double; src: Assets/Src/Images/bedroom.jpg; repeat: 300 300" rotation="" scale="1 1 1.128"></a-entity>
+    <a-entity static-body="" geometry="depth: 120; width: 50; height: 5" position="55.756 37.4265 -163.88243" material="shader: flat; side: double; src: Assets/Src/Images/bedroom.jpg; repeat: 300 300" rotation=""></a-entity>
+
+<!--Ceiling Fan-->
+<a-entity id="CeilingFan1" obj-model="mtl: models/Fan/540 Ceiling Fan.mtl; obj: models/Fan/540 Ceiling Fan.obj" position="-13.17572 25.79498 -166.27493" 
+rotation="0 184.896 0" scale="0.03 0.03 0.03" animation="property: rotation; dur: 700; from: 0 0 0; to: 0 360 0; easing: linear; loop: true"></a-entity>
+
+<a-entity id="CeilingFan1-2" obj-model="mtl: models/Fan/540 Ceiling Fan.mtl; obj: models/Fan/540 Ceiling Fan.obj" position="-65.22978 25.795 -166.275" 
+rotation="0 291.497142857526 0" scale="0.03 0.03 0.03" animation="property: rotation; dur: 700; from: 0 0 0; to: 0 360 0; easing: linear; loop: true"></a-entity>
+
+
+
+
+ <!--models-->
+ <a-entity id="Ke" gltf-model="models\Ke_tivi\ke_tivi.glb" position="74.34341 5.47824 -180.28284" rotation="-0.1546986046853223 90.50326740327458 -0.6674958313274091" scale="0.02 0.02 0.02"></a-entity>
+ <a-entity id="Piano" gltf-model="models\Piano\piano.glb" position="-47.365 5.71981 -169.798" rotation="0.392 -150.939 -0.246" scale="0.3 0.27 0.29"></a-entity>
+ <a-entity id="kitchen" gltf-model="models\Kitchen\basic_kitchen_cabinets_and_counter.glb" position="56.339 5.49773 -203.632" rotation="-0.155 -0.451 -0.667" scale="0.23 0.2 0.2"></a-entity> 
+ <a-entity id="Bep" gltf-model="models\Bep\stove_with_hood.glb" position="53.238 5.58124 -221.724" rotation="-0.155 -91.293 -0.667" scale="8 8.5 9"></a-entity>
+ <a-entity id="TuLanh" gltf-model="models\TuLanh\fridge.glb" position="75.804 13.29389 -198.15131" rotation="-0.1552715624804531 -0.7173431595037907 -0.6669228735322782" scale="6 7.7 7"></a-entity>
+ <a-entity id="ChauCay" gltf-model="models\ChauCay\rhyzome_plant.glb" position="-80.35539 5.68277 -154.24115" rotation="-0.155 -91.293 -0.667" scale="10 10 10"></a-entity>
+ <a-entity id="PC" gltf-model="models\PC\pc_desktop.glb" position="4.86819 9.04291 -156.95078" rotation="-0.1552715624804531 -179.0871261928609 -0.6669228735322782" scale="10 10 10"></a-entity>
+ <a-entity id="TV" gltf-model="models/TV/scene.gltf" position="54.96746 12.41517 -183.49904" rotation="-0.23548565379876835 -0.13464508185574348 0.2733008682774027" scale="31.3088 26.20236 17.139"></a-entity>
+ <a-entity id="Sofa" gltf-model="models/Sofa/outdoors_sofa.glb" position="58.42199 6.34286 -143.33904" rotation="-0.7058840036011742 89.85238734800596 -0.08365183808910019" scale="8.65631 7.57106 5.97568"></a-entity> 
+ <a-entity id="Đèn ngủ" gltf-model="models\Đèn ngủ\ghỗ óc chó.glb" position="5.49538 5.72325 -174.80835" rotation="0.7070299191914359 -90.87110630774856 0.07448451336700701" scale="7.40794 7.16673 4.58806"></a-entity>
+ <a-entity id="Ghế" gltf-model="models\Ghế\office_swivel_chair.glb" position="-3.18492 5.70925 -157.66883" rotation="0.6778090716397639 93.15835382591081 0.2142862153789279" scale="7.408 7.96142 7.43725"></a-entity>
+ <a-entity id="Dogs" gltf-model="models\Dogs\spot.glb" position="-25.88301 2.45242 -72.9776" rotation="0.29965692685342055 140.70640237043244 0.6445775195221761" scale="-0.42516 0.38598 -0.52081"></a-entity>
+ 
+ 
+ <!-- Video entity -->
+    <a-video static-body="PC" geometry="height: 2.7; width: 5" position="7.09617 15.16935 -158.54768" material="src: models/video/Hacker%20Typer.mp4" rotation="0.06302535746439056 -88.96201093437267 -0.5070676486907786" class="intersectable" toggle-video="" scale="0.93069 0.995 1"></a-video>
+    <a-video static-body="TV" geometry="height: 2.7; width: 5" position="54.878 21.35674 -182.82396" material="src: models/video/Anonymous.mp4" rotation="-0.2263183290766752 -0.6113459674045886 0.10198648753328653" class="intersectable" toggle-video="" scale="5.97655 5.17184 1"></a-video>
+
+
+
+<!--be ca-->
+<a-box id="be ca" src="./video/vecteezy_african-lake-fishes-swimming-behind-the-glass-in-aquarium_5485471.mov" position="46.11475 12.51886 -135.20865" rotation="0 178.31707091620507 0" color="#4CC3D9" material="" geometry="" scale="3.06873 4.14199 4.959"></a-box>
+
+
+<a-entity id="Dogs" gltf-model="models/Dogs/spot.glb" position="-25.88301 2.45242 -72.9776" rotation="0.29965692685342055 140.70640237043244 0.6445775195221761" scale="-0.42516 0.38598 -0.52081" sound__click="on: click; src: #dogBark"></a-entity>
+
+<a-sound id="dogBark" src="src/CHÓ SỦA REMIX CỰC PHÊ.mp3"></a-sound>
+
+
+<script type="text/javascript">
+				
+  function tvClick()
+  {
+    var tv = document.querySelector("#tvScreen");
+    var text = document.querySelector("#tvText");
+
+    if(!tvOn)
+    {
+      text.setAttribute('visible', 'false');
+      tv.setAttribute('material', 'color', 'white');
+      tvOn = true;
+    }
+    else
+    {
+      tv.setAttribute('material', 'color', 'black');
+      tvOn = false;
+    }
+  }
+
+  function monitorClick()
+  {
+    var screenM = document.querySelector("#middleScreen");
+    var screenL = document.querySelector("#leftScreen");
+    var screenR = document.querySelector("#rightScreen");
+    var text = document.querySelector("#monitorText");
+
+    if(!monitorsOn)
+    {
+      text.setAttribute('visible', 'false');
+      screenM.setAttribute('material', 'color', 'white');
+      screenL.setAttribute('material', 'color', 'white');
+          screenR.setAttribute('material', 'color', 'white');
+      monitorsOn = true;
+    }
+    else
+    {
+      screenM.setAttribute('material', 'color', 'black');
+          screenL.setAttribute('material', 'color', 'black');
+          screenR.setAttribute('material', 'color', 'black');
+      monitorsOn = false;
+    }
+  }
+
+  function lampClick()
+  {
+    var lamp = document.querySelector("#lampLight");
+    var text = document.querySelector("#lampText");
+
+    if(!lampOn)
+    {
+      text.setAttribute('visible', 'false');
+      lamp.setAttribute('light', 'intensity', '0.6');
+      lampOn = true;
+    }
+    else
+    {
+      lamp.setAttribute('light', 'intensity', '0');
+      lampOn = false;
+    }
+  }
+
+  function dimmerClick()
+  {
+    var light = document.querySelector("#insideLight");
+    var text = document.querySelector("#dimmerText");
+
+    if(!dim)
+    {
+      text.setAttribute('visible', 'false');
+      light.setAttribute('light', 'color', '#1c0f62');
+      //outlight.setAttribute('light', 'intensity', '0');
+      dim = true;
+    }
+    else
+    {
+      light.setAttribute('light', 'color', '#BBB');
+      //outlight.setAttribute('light', 'intensity', '0.6');
+      dim = false;
+    }
+  }
+
+  function blindsClick()
+  {
+    var blinds = document.querySelector("#blinds");
+    var text = document.querySelector("#blindsText");
+
+    if(!blindsActive)
+    {
+      text.setAttribute('visible', 'false');
+      blinds.emit('blindsDown');
+      blindsActive = true;
+    }
+    else
+    {
+      blinds.emit('blindsUp');
+      blindsActive = false;
+    }
+  }
+
+  function playPiano()
+  {
+    var text = document.querySelector("#pianoText");
+    text.setAttribute('visible', 'false');
+    var audio = document.querySelector("#pianoSound");
+    audio.play();
+  }
+  </script>
+
+
+
+
+ </a-scene>
+
+
+</body>
+
+</html>

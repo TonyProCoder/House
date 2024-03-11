@@ -1,0 +1,11 @@
+Model Information:
+* title:	TV_Model
+* source:	https://sketchfab.com/3d-models/tv-model-32c47748594b4ccc8e66dcecb1b164e8
+* author:	Ha Van (https://sketchfab.com/nganha2169)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "TV_Model" (https://sketchfab.com/3d-models/tv-model-32c47748594b4ccc8e66dcecb1b164e8) by Ha Van (https://sketchfab.com/nganha2169) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
